@@ -153,4 +153,9 @@
 
     </PreferenceCategory>
 
+    <Preference
+            android:key="heads_up_notifications"
+            android:title="@string/title_heads_up"
+            android:fragment="com.android.settings.jisoo.HeadsUpSettings" />
+
 </PreferenceScreen>
