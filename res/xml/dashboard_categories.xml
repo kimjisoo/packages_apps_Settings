@@ -208,6 +208,14 @@
                 android:icon="@drawable/ic_settings_backup"
                 />
 
+        <!-- Spare parts -->
+        <dashboard-tile
+                android:id="@+id/jisoo_settings"
+                android:title="@string/jisoo_settings_title"
+                android:fragment="com.android.settings.jisoo.JisooSettings"
+                android:icon="@drawable/ic_settings_system"
+                />
+
     </dashboard-category>
 
     <!-- SYSTEM -->
