@@ -26,4 +26,11 @@
         android:title="@string/omniswitch_settings_title"
         android:fragment="com.android.settings.jisoo.OmniSwitch" />
 
+    <!-- OmniSwitch -->
+    <PreferenceScreen
+        android:key="slimpie"
+        android:id="@+id/slimpie"
+        android:title="@string/pie_settings_title"
+        android:fragment="com.android.settings.slim.PieControl" />
+
 </PreferenceScreen>
