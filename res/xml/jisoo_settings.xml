@@ -19,4 +19,11 @@
     android:title="@string/jisoo_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- OmniSwitch -->
+    <PreferenceScreen
+        android:key="omniswitch"
+        android:id="@+id/omniswitch"
+        android:title="@string/omniswitch_settings_title"
+        android:fragment="com.android.settings.jisoo.OmniSwitch" />
+
 </PreferenceScreen>
