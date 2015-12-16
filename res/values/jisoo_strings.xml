@@ -472,4 +472,7 @@
     <string name="heads_up_disabled_notice">To allow applications to display interactive notifications in a pop-up window on your screen, enable Heads up.</string>
     <string name="heads_up_contains_key">Already added this application to the list</string>
 
+    <!-- Font size sample text -->
+    <string name="font_size_sample">Font Size</string>
+
 </resources>
