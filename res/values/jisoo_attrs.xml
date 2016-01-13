@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources>
+
     <declare-styleable name="IntervalSeekBar">
         <attr name="min" format="float" />
         <attr name="max" format="float" />
@@ -29,4 +30,5 @@
         <attr name="unitsLeft" format="string" />
         <attr name="unitsRight" format="string" />
     </declare-styleable>
+
 </resources>
