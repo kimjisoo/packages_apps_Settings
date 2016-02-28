@@ -429,4 +429,8 @@
     <string name="doze_wakeup_doubletap_summary_on">Require a double-tap to wake the device on a doze pulse screen</string>
     <string name="doze_wakeup_doubletap_summary_off">Require a simple-tap to wake the device on a doze pulse screen (default)</string>
 
+    <!-- Skip tracks on longpress volume buttons -->
+    <string name="volbtn_music_controls_title">Volume rocker music controls</string>
+    <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will skip music tracks</string>
+
 </resources>

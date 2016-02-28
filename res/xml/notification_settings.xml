@@ -48,6 +48,13 @@
                 android:icon="@*android:drawable/ic_audio_ring_notif"
                 android:title="@string/notification_volume_option_title" />
 
+        <!-- Skip tracks on longpress volume buttons -->
+        <com.android.settings.slim.SystemSettingSwitchPreference
+            android:key="volbtn_music_controls"
+            android:title="@string/volbtn_music_controls_title"
+            android:summary="@string/volbtn_music_controls_summary"
+            android:defaultValue="false" />
+
         <!-- Also vibrate for calls -->
         <SwitchPreference
                 android:key="vibrate_when_ringing"
