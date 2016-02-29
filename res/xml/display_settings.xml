@@ -128,6 +128,25 @@
                 android:title="@string/power_menu_expanded_desktop"
                 android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
 
+         <PreferenceCategory
+             android:key="category_wakeup_options"
+             android:title="@string/display_category_wakeup_options_title" >
+
+            <SwitchPreference
+                android:key="wakeup_when_plugged_unplugged"
+                android:title="@string/wakeup_when_plugged_unplugged_title"
+                android:summary="@string/wakeup_when_plugged_unplugged_summary"
+                android:defaultValue="true"
+                android:persistent="false" />
+
+            <com.android.settings.slim.SystemSettingSwitchPreference
+                android:key="proximity_on_wake"
+                android:title="@string/proximity_wake_title"
+                android:summary="@string/proximity_wake_summary"
+                android:defaultValue="false" />
+
+         </PreferenceCategory>
+
         <PreferenceCategory
             android:key="category_doze_options"
             android:title="@string/display_category_doze_options_title" >
@@ -143,19 +162,6 @@
                 android:key="advanced_doze_options"
                 android:title="@string/doze_settings_title"
                 android:dependency="doze" />
-
-         </PreferenceCategory>
-
-         <PreferenceCategory
-             android:key="category_wakeup_options"
-             android:title="@string/display_category_wakeup_options_title" >
-
-            <SwitchPreference
-                android:key="wakeup_when_plugged_unplugged"
-                android:title="@string/wakeup_when_plugged_unplugged_title"
-                android:summary="@string/wakeup_when_plugged_unplugged_summary"
-                android:defaultValue="true"
-                android:persistent="false" />
 
          </PreferenceCategory>
 
