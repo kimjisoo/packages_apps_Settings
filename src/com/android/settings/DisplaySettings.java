@@ -62,7 +62,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.android.settings.nexus.DisplayRotation;
+import com.android.settings.jisoo.DisplayRotation;
 
 public class DisplaySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, OnPreferenceClickListener, Indexable {
