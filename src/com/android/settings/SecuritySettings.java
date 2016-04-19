@@ -22,6 +22,8 @@ import android.app.AlertDialog;
 import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.ContentResolver;
+import android.content.res.Resources;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -88,6 +90,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private static final String KEY_MANAGE_TRUST_AGENTS = "manage_trust_agents";
     private static final String KEY_FINGERPRINT_SETTINGS = "fingerprint_settings";
     private static final String KEY_ADVANCED_REBOOT = "advanced_reboot";
+    private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
 
     private static final int SET_OR_CHANGE_LOCK_METHOD_REQUEST = 123;
     private static final int CHANGE_TRUST_AGENT_SETTINGS = 126;
@@ -133,6 +136,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private DialogInterface mWarnInstallApps;
     private SwitchPreference mPowerButtonInstantlyLocks;
     private ListPreference mAdvancedReboot;
+    private SwitchPreference mBlockOnSecureKeyguard;
 
     private boolean mIsPrimary;
 
@@ -328,6 +332,11 @@ public class SecuritySettings extends SettingsPreferenceFragment
         } else {
             deviceAdminCategory.removePreference(mAdvancedReboot);
         }
+
+        mBlockOnSecureKeyguard = (SwitchPreference) findPreference(PREF_BLOCK_ON_SECURE_KEYGUARD);
+            mBlockOnSecureKeyguard.setChecked(Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD, 1) == 1);
+            mBlockOnSecureKeyguard.setOnPreferenceChangeListener(this);
 
         // Advanced Security features
         PreferenceGroup advancedCategory =
@@ -722,6 +731,10 @@ public class SecuritySettings extends SettingsPreferenceFragment
                     Integer.valueOf((String) value));
             mAdvancedReboot.setValue(String.valueOf(value));
             mAdvancedReboot.setSummary(mAdvancedReboot.getEntry());
+        } else if (preference == mBlockOnSecureKeyguard) {
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD,
+                    ((Boolean) value) ? 1 : 0);
         }
         return result;
     }
