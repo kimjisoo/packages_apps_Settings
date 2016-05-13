@@ -2815,7 +2815,7 @@
     <string name="usb_use_power_only" msgid="6304554004177083963">"Power supply"</string>
     <string name="usb_use_power_only_desc" msgid="708134382305728112">"Charge the other connected device"</string>
     <string name="usb_use_file_transfers" msgid="6978904665877785548">"File transfers"</string>
-    <string name="usb_use_file_transfers_desc" msgid="1663579896876922124">"Transfer files to Windows or Mac (MTP)"</string>
+    <string name="usb_use_file_transfers_desc" msgid="1663579896876922124">"Transfer files to computer (MTP)"</string>
     <string name="usb_use_photo_transfers" msgid="8276445551694259039">"Photo transfer (PTP)"</string>
     <string name="usb_use_photo_transfers_desc" msgid="2963034811151325996">"Transfer photos or files if MTP is not supported (PTP)"</string>
     <string name="usb_use_MIDI" msgid="5116404702692483166">"MIDI"</string>
