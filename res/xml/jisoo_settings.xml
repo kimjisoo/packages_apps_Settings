@@ -33,4 +33,11 @@
         android:title="@string/pie_settings_title"
         android:fragment="com.android.settings.slim.PieControl" />
 
+    <!-- Blur -->
+    <PreferenceScreen
+        android:key="blur"
+        android:id="@+id/blur"
+        android:title="@string/jisoo_settings_blur_cat"
+        android:fragment="com.android.settings.jisoo.BlurPersonalizations" />
+
 </PreferenceScreen>
