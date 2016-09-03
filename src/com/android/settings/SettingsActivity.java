@@ -135,6 +135,9 @@ import com.android.settingslib.drawer.SettingsDrawerActivity;
 import com.android.settingslib.drawer.Tile;
 
 import java.net.URISyntaxException;
+
+import com.jisoo.tweaks.Tweaks;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -357,7 +360,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             MasterClear.class.getName(),
             NightDisplaySettings.class.getName(),
             ManageDomainUrls.class.getName(),
-            AutomaticStorageManagerSettings.class.getName()
+            AutomaticStorageManagerSettings.class.getName(),
+            Tweaks.class.getName()
     };
 
 
