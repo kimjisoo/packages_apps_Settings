@@ -137,6 +137,10 @@ import com.android.settingslib.drawer.Tile;
 import java.net.URISyntaxException;
 
 import com.jisoo.tweaks.Tweaks;
+import com.dirtyunicorns.dutweaks.fragments.FlingSettings;
+import com.dirtyunicorns.dutweaks.fragments.NavbarSettings;
+import com.dirtyunicorns.dutweaks.fragments.SmartbarSettings;
+import com.dirtyunicorns.dutweaks.fragments.PulseSettings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -361,7 +365,11 @@ public class SettingsActivity extends SettingsDrawerActivity
             NightDisplaySettings.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
-            Tweaks.class.getName()
+            Tweaks.class.getName(),
+            NavbarSettings.class.getName(),
+            FlingSettings.class.getName(),
+            SmartbarSettings.class.getName(),
+            PulseSettings.class.getName()
     };
 
 
